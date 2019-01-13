@@ -11,7 +11,7 @@ $(function() {
             var $this = $(this),
               elemOffsetTop = $this.offset().top;
             if (currScrollPos + 150 > elemOffsetTop) {
-              $this.css('opacity', 1 - (currScrollPos+180-elemOffsetTop)/200);
+              $this.css('opacity', 1 - (currScrollPos+ 150 - elemOffsetTop) / 200);
             } else {
               $this.css('opacity', 1)
             }

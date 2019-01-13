@@ -44,13 +44,13 @@ body {
 }
 
 .display-5 {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2em;
+  line-height: 0.8em;
 }
 
 .display-6 {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.6em;
+  line-height: 1.2em;
 }
 
 .text-white {
@@ -75,9 +75,10 @@ body {
 }
 
 #portfolio {
-    background: linear-gradient(to bottom, rgba(146, 66, 244, 0.3) 0%, rgba(255, 255, 255, 0) 100% );
+  background: linear-gradient(to bottom, rgba(146, 66, 244, 0.3) 0%, rgba(255, 255, 255, 0) 100% );
 }
 
 #portfolio i{
-zoom: 6;
+  zoom: 6;
+  margin: 110px 0;
 }
