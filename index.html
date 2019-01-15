@@ -183,21 +183,22 @@
             <div class="col-6">
               <h1 class="text-white display-4">Send a message</h1>
               <form name='contact' method="POST" data-netlify='true'>
+                <input type="text" name="lsad" value="">
                 <table class="table">
                   <tr>
-                    <input name="contact" placeholder="Your name..." class="form-control">
+                    <input name="name" placeholder="Your name..." class="form-control">
                   </tr>
                   <tr>
-                    <input name="contact" type="email" placeholder="Your Email..." class="form-control">
+                    <input name="email" type="email" placeholder="Your Email..." class="form-control">
                   </tr>
                   <tr>
                     <label class="text-white">Message:</label>
                   </tr>
                   <tr>
-                    <textarea name="contact" class="form-control"></textarea>
+                    <textarea name="message" class="form-control"></textarea>
                   </tr>
                   <tr>
-                    <button name="contact" class="btn btn-light" type="submit">Submit</button>
+                    <button class="btn btn-light" type="submit">Submit</button>
                   </tr>
                 </table>
               </form>
