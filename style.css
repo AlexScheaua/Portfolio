@@ -11,6 +11,11 @@ body {
   height: 100%;
 }
 
+.nav-link {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
 .bg-dark {
   opacity: 0.7;
 }
@@ -35,7 +40,6 @@ body {
 .link-transparent:hover {
   background-color: rgba(255, 255, 255, 0.5);
   transition-duration: 0.5s;
-  border-radius: 5px;
 }
 
 .content-box {
@@ -77,6 +81,10 @@ body {
   background: linear-gradient(to bottom, rgba(0, 90, 237, 0.3) 0%, rgba(146, 66, 244, 0.3) 100%);
 }
 
+#about-me a{
+  text-decoration: underline;
+}
+
 #portfolio {
   background: linear-gradient(to bottom, rgba(146, 66, 244, 0.3) 0%, rgba(255, 255, 255, 0) 100% );
 }
@@ -102,5 +110,34 @@ body {
 
 #contact i{
   color: white;
+  opacity: 0.5;
   zoom:2;
+}
+
+#contact i:hover{
+  opacity: 1;
+  zoom: 2.2;
+  transition-duration: 0.4s;
+}
+
+#contact input,#contact textarea {
+  margin: 10px 0;
+  opacity: 0.7;
+}
+
+#footer {
+  margin: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 100% );
+}
+
+#footer p,#footer a {
+  margin: 0 15px;
+}
+
+#footer a{
+  text-decoration: underline;
+}
+
+#footer a:hover {
+    opacity: 0.5;
 }
