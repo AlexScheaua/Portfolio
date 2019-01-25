@@ -141,3 +141,47 @@ body {
 #footer a:hover {
     opacity: 0.5;
 }
+
+
+@media only screen and (max-width: 600px) {
+  body{
+    background: url(resources/background-background-image-clear-sky-1054222.jpg) no-repeat fixed;
+    -webkit-background-size: 1400px auto;
+    -moz-background-size: 1400px auto;
+    -o-background-size: 1400px auto;
+    background-size: 1400px auto;
+  }
+
+  .wrapper{
+    overflow: hidden;
+  }
+
+  .navbar {
+    min-height: 100px;
+  }
+
+  .navbar-brand {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+ #about-me p{
+   font-size: 18px;
+   text-align: left;
+ }
+
+ #portfolio h1{
+   font-size: 42px;
+ }
+
+ #portfolio .card-header>a {
+   font-size: 35px;
+  }
+
+}
