@@ -152,12 +152,21 @@ body {
     background-size: 1400px auto;
   }
 
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .display-1 {
+    font-size: 90px;
+  }
+
   .wrapper{
     overflow: hidden;
   }
 
   .navbar {
-    min-height: 100px;
+    min-height: 60px;
   }
 
   .navbar-brand {
