@@ -26,5 +26,18 @@ $(function() {
       }, 500, 'linear');
     });
 
-
+    function formInit(){
+      let form = document.querySelector("#form")
+      let formSubmitButton = document.querySelector("#form-submit");
+      let formName = document.querySelector("#form-name");
+      let formEmail = document.querySelector("#form-email")
+      let formMessage = document.querySelector("#form-message")
+      form.addEventListener("submit",function(event){
+        if(formName.value === "" || formEmail.value === "" || formMessage.innerText === ""){
+            event.preventDefault();
+            alert("Va rog completati Formularul")
+        }
+      })
+    }
+formInit();
 });

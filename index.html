@@ -189,22 +189,22 @@
             </div>
             <div class="col-md-6 col-12 text-center d-flex flex-column align-items-center">
               <h1 class="text-white display-4">Send a message</h1>
-              <form name='contact' method="POST" data-netlify='true'>
+              <form id="form" name='contact' method="POST" data-netlify='true'>
                 <table class="table">
                   <tr>
-                    <input name="name" placeholder="Your name..." class="form-control">
+                    <input id="form-name" name="name" placeholder="Your name..." class="form-control">
                   </tr>
                   <tr>
-                    <input name="email" type="email" placeholder="Your Email..." class="form-control">
+                    <input id="form-email"name="email" type="email" placeholder="Your Email..." class="form-control">
                   </tr>
                   <tr>
                     <label class="text-white">Message:</label>
                   </tr>
                   <tr>
-                    <textarea name="message" class="form-control"></textarea>
+                    <textarea id="form-message" name="message" class="form-control"></textarea>
                   </tr>
                   <tr>
-                    <button class="btn btn-light" type="submit">Submit</button>
+                    <button id="form-submit" class="btn btn-light" type="submit">Submit</button>
                   </tr>
                 </table>
               </form>
