@@ -1,0 +1,33 @@
+.home {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+
+  .zero-height {
+    background: red;
+  }
+  .zero-height > p{
+    position: absolute;
+  }
+  .zero-height > input {
+    position: absolute;
+  }
+
+  &__name{
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid set-text-color($background-color);
+
+    &--last {
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+
+  &__about-me {
+    display: none;
+  }
+}
