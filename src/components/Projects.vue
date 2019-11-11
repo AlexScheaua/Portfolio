@@ -37,8 +37,7 @@
         components: {Footer, Social},
         data() {
             return {
-                backgroundImage: '',
-                projectName: 'Projects',
+                projectName: '',
                 projectDescription: ''
             }
         },
@@ -46,6 +45,9 @@
             projects() {
                 return projectsList;
             }
+        },
+        mounted() {
+            this.previewProject(0);
         },
         methods: {
             previewProject(index) {
