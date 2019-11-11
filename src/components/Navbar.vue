@@ -42,19 +42,44 @@
               ]
           }
         },
+        created(){
+          window.onscroll = () => {this.scrollHandler()};
+        },
         methods: {
+            /**
+             * applies toggle class for navbar
+             * @returns {string}
+             */
             showMenu(){
                 if(this.isShowMenu) {
                     return 'open'
                 }
                 return ''
             },
+            /**
+             * toggles isShowMenu
+             * @returns {Void}
+             */
             toggleMenu(){
                 this.isShowMenu = !this.isShowMenu;
             },
+            /**
+             * Changes components
+             * @param component
+             */
             clickHandler(component){
                 this.changeComponent(component);
                 this.isShowMenu = false;
+            },
+            /**
+             * adds class to navbar to shrink it and modify the opacity based on scroll
+             */
+            scrollHandler(){
+                if(window.scrollY > 80 && !this.isShowMenu){
+                    document.querySelector('.nav').classList.add('scrolled');
+                } else {
+                    document.querySelector('.nav').classList.remove('scrolled');
+                }
             }
         }
     }

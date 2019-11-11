@@ -62,6 +62,7 @@
   width: 100vw;
   opacity: .98;
   visibility: hidden;
+  @include transition-ease;
 
   &.open {
     visibility: visible;
@@ -116,6 +117,15 @@
         color: $secondary-color;
       }
     }
+  }
+}
+
+.scrolled {
+  height: 3rem;
+  background: #ffffffee;
+
+  .menu-nav__link {
+    padding: 1rem 0;
   }
 }
 
