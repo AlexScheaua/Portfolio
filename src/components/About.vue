@@ -3,12 +3,12 @@
         <div class="about__bio-image">
             <div class="about__bio">
                 <h2 class="text-secondary">About me</h2>
-                <p>{{bio}}</p>
+                <p>{{about.bio}}</p>
             </div>
         </div>
 
         <div class="jobs">
-            <div v-for="item in experience" :key="item.interval" class="jobs__job">
+            <div v-for="item in about.experience" :key="item.interval" class="jobs__job">
                 <h2 class="text-secondary">{{item.interval}}</h2>
                 <h5>{{item.company}}</h5>
                 <h3>{{item.role}}</h3>
@@ -27,16 +27,27 @@
 <script>
     import Social from "./Social";
     import Footer from "./Footer";
-    import About from "../assets/About"
 
     export default {
         name: "about",
         props:['changeComponent'],
         components: {Footer, Social},
+        created(){
+            this.initializeAbout();
+        },
         data(){
             return {
-                bio: About.bio,
-                experience: About.experience
+               about: {}
+            }
+        },
+        methods: {
+            /**
+             * Gets data from Firebase
+             */
+            initializeAbout(){
+                fetch('https://portfolio-819bb.firebaseio.com/About.json')
+                    .then(res => res.json())
+                    .then(data => this.about = data);
             }
         }
     }

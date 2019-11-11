@@ -26,7 +26,7 @@
         },
         data() {
             return {
-                component: Home
+                component: Home,
             }
         },
         methods: {
